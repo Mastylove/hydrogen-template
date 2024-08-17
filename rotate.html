@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con
+        {
+           display: flex;
+           justify-content: center;
+        }
+        h3
+        {
+          
+            height:100px;
+            width:100px;
+            background-color: darkgray;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            border-radius: 20px;
+            
+            animation-name:grow;
+            animation-duration:0.5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes grow
+        {
+            100%{transform:  scale(1.5)}
+        }
+        .music
+        {
+            justify-content: center;
+        }
+        audio
+        {
+            text-align: center;
+              margin-left:170px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+    <h3>Set by Mica</h3>
+</div>
+<br>
+<div class="music">
+
+<audio controls loop autoplay>
+  <source src="music/miza.mp3" >
+</audio>
+</div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container
+      {
+        background-color: hsl(180, 93%, 40%);
+        position:fixed;
+        width:100%;
+        box-shadow:3px 3px 2px grey;
+        height: 30px;
+       
+        text-align: center;
+        padding:20px;
+        margin-right: 15px;
+       
+      }
+ 
+        a
+        {
+         text-decoration: none;
+         margin:8px;
+         font-size: 30px;
+         font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .logo
+        {
+          float:left;
+          font-size: 30px;
+         color:rgb(226, 13, 13);
+          
+        }
+        .navbar
+        {
+          display:flex;
+          justify-content: flex-end;
+         justify-content:space-evenly;
+
+        }
+        h4
+        {
+          background-image:url(images/mahber.jpg) ;
+          height: 300px;
+          color:white;
+          font-size: 2em;
+          background-color: yellow;
+          border-radius: 20px;
+          padding: 10px;
+          width:100%;
+          animation-name: slideUp;
+          animation-duration:2.5s;
+          transition:all 2.5s;
+          text-align: center;
+          clear:both;
+        }
+
+        @keyframes slideUp
+        {
+          from
+          {
+            transform:translateY(1000px) 
+          }
+           to{transform:translateY(30px)  }
+        }
+        #btn{
+          border-radius:10px;
+          width:200px;
+          padding: 10px;
+          background-color: hsl(0, 0%, 50%);
+          color:white;
+          font-family: bold;
+          font-size: 1em;
+          cursor: pointer;
+          transition:all 1.5s;
+        }
+        #btn:hover
+        {
+          transform:translateY(-10px);
+          background-color: hsl(0, 0%, 80%) ;
+          cursor: pointer;
+        }
+       
+    
+        h3
+        {
+          
+            height:100px;
+            width:100px;
+            background-color: hsl(0, 0%, 66%);
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            border-radius: 20px;
+            
+            animation-name:grow;
+            animation-duration:0.5s;
+            animation-iteration-count: infinite;
+            clear:both;
+        }
+        @keyframes grow
+        {
+            100%{transform:  scale(0.8);
+            }
+        }
+        .music
+        {
+            text-align: center;
+            margin:auto;
+        }
+        h3
+        {
+          margin:auto;
+        }
+        h3:hover
+        {
+          background-color: hsl(0, 0%, 80%);
+        }
+        @media screen and (max-width:600px){
+           .navbar{
+            top:0;
+            right:0;
+           }
+           .container{
+            margin-left:-30px;
+           }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+  <div class="logo">Logo</div>
+   <div class="navbar">
+       
+        <div><a href="">home</a></div>
+       <div><a href="">products</a></div> 
+       <div><a href="">about</a></div> 
+       <div> <a href="">contact</a></div>
+      </div> 
+    </div>
+      <br><br> <br> <br> <br>
+  <h4>WELLCOME TO MARAKI FOOD RESTUARANT <br> <br>
+    <a href="image2.html"><button id="btn">Get start</button></a>
+  </h4>
+  
+  <br>
+  <div class="con">
+    <h3>Set by Mica</h3>
+</div>
+<br>
+<div class="music">
+
+<audio controls loop autoplay>
+  <source src="music/miza.mp3" >
+</audio>
+</div>
+     <!-- 
+      <ul>
+        <li style="background-color: brown;"><a href="">home</a></div></li>
+        <li><a href="">products</a></div></li>
+        <li><a href="">about</a></div></li>
+        <li><a href="">contact</a></div></li>
+      </ul>
+    --> 
+</body>
+</html>

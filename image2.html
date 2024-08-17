@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images_Gaallery</title>
+    <style>
+      body{
+        background-color: grey;
+      }
+      *
+      {
+        margin:0px;
+        padding:0px;
+      
+      }
+      .gallery
+      {
+        background-color: white;
+        display: inline-block;
+         border: 1px solid rgb(208, 203, 203);
+         border-radius: 50px;
+         margin:15px;
+         padding: 20px;
+         padding-top:20px ;
+         box-shadow:3px 3px 10px rgb(198, 193, 193) ;
+         
+        }
+      .gallery img
+      {
+        width:200px;
+      }
+      .gallery .description
+      {
+        text-align: center;
+      }
+      .gallery a{
+        text-decoration: none;
+        color: black;
+      }
+      button
+      {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: rgb(245, 24, 127);
+        border-radius: 10px;
+        padding: 5px;
+      }
+      .gallery:hover
+      {
+        border:2px solid rgb(115, 83, 83);
+        
+      }
+      button:hover
+      {
+        background-color: rgb(9, 231, 54);
+        cursor: pointer;
+        
+      }
+      @media screen and (max-width:600px) 
+      {
+      div,img
+        {
+             width:50%;
+             align-items: center;
+             padding: 7px;
+             margin:0px;
+        }
+    }
+    .gallery
+    {
+      animation-name:slideDown;
+      animation-duration: 6s ;
+      animation-iteration-count: 1;
+      margin-left: 100px;
+      transition: all 1.5s;
+   
+    }
+    @keyframes slideDown 
+    {
+      from
+      {
+        transform:translateY(-2000px)
+      }
+      to
+      {transform:translateY(10px) 
+      }
+    }
+
+
+    .gallery:hover{
+      transform: translateY(20px) scale(1.1);
+      margin-top:15px;
+      margin-bottom:15px;
+     
+    }
+   
+    button:hover
+    {
+      transform:  translateY(0px)  scale(1.2) ;
+    }
+
+ 
+    h1
+    {
+      
+      background-color: yellow;
+      border-radius: 20px;
+      padding: 10px;
+      width:400px;
+      text-align: center;
+      animation-name: slideLeft;
+      animation-duration: 15s;
+   
+     transform: translateX(-1000px);
+    }
+    @keyframes slideLeft
+    {
+      from
+      {
+        transform:translateX(-100px) 
+      }
+       to{transform:translateX(10000px) }
+    }
+    h2
+    {
+      
+      background-color: hsl(327, 89%, 49%);
+      border-radius: 20px;
+      padding: 10px;
+      width:500px;
+      animation-name: slideRight;
+      animation-duration: 2.1s;
+       transform: translateX(10px);
+      text-align: center;
+       cursor:pointer;
+    }
+    @keyframes slideRight
+    {
+      from
+      {
+        transform:translateX(10000px) 
+      }
+       to{transform:translateX(100px) }
+    }
+  
+    .nav a
+    {
+       
+       display: inline-block;
+       text-decoration: none;
+       padding: 2px;
+       margin: 10px;
+       font-weight: bold;
+       font-family: Arial, Helvetica, sans-serif;
+    }
+    .logo
+    {
+       font-size: 20px;
+       color:rgb(1, 1, 1);
+       text-shadow: 2px 3px 1px crimson;
+       position: sticky;
+       top:0;
+    
+    }
+    .nav a:not(.nav.logo)
+    {
+       color: green;
+    }
+    .bar
+    {
+      float: left;
+  
+    }
+    #home
+    {
+     
+     background-color: red;
+     padding: 3px;
+     border-radius: 5px;
+    }
+
+    #Products
+    {
+     
+     background-color: #9123ff;
+     padding: 3px;
+     border-radius: 5px;
+    }
+    #About 
+    {
+     
+     background-color: #8d074c27;
+     padding: 3px;
+     border-radius: 5px;
+    }
+    #Contact
+    {
+     
+     background-color: hwb(0 56% 7%);
+     padding: 3px;
+     border-radius: 5px;
+    }
+   .nav{
+    
+    display: flex;
+   
+    justify-content:space-evenly;
+    top:0;
+    position: sticky;
+   }
+   h1,h2
+   {
+    margin-top:20px;
+   }
+   h2
+   {
+    margin-bottom:10px;
+   }
+   h2
+   {
+    margin-top:-40px;
+   }
+   h5
+   {
+    font-size: 3em;
+    text-align: center;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: 8;
+   }
+   @keyframes rotate
+   {
+    from
+    {
+      transform: rotate(0);
+    }
+    to
+    {
+      transform: rotate(360deg);
+    }
+   }
+   h5:hover 
+  {
+    transform: translateY(10px) scale(1.5);
+    cursor:pointer;
+  }
+
+  .two
+  {
+  display:flex;
+  justify-content: center;
+  margin-left: 70px;
+  }
+
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+      <a href="#" class="logo">MYPROFILE</a>
+
+      <a href="index.html" class="bar" id="home">Home</a>
+      <a href="#" class="bar" id="Products">Products</a>
+      <a href="#" class="bar" id="About">About</a>
+      <a href="#" class="bar" id="Contact">Contact</a>
+    </div>
+    <hr>
+  <br>
+  <br>
+  <br>
+    <main>
+      <h1>Let's get start</h1> 
+      <h5>😛</h5>
+      <br>
+      <br>
+      <br>
+      <div class="two">
+
+      <h2>Eat Me,Drink Me</h2> 
+    </div>
+      <hr>
+       <div class="gallery">
+       
+        <a href="images/Beyanetu.jpg" >
+            <img src="images/Beyanetu.jpg" alt="Beyanetu" >
+             <div class="description">
+                Beyanetu <br>
+                price $150 <br> 
+                <button>Add to Cart</button>
+             </div>
+            
+        </a>
+       </div>
+      
+       <div class="gallery">
+        <a href="images/tibs.jpg" >
+            <img src="images/tibs.jpg" alt="Beyanetu" >
+             <div class="description">
+                tibs <br>
+                price $150
+                <br>
+                <button>Add to Cart</button>
+             </div>
+        </a>
+       </div>
+
+       <div class="gallery">
+        <a href="images/mahber.jpg" >
+            <img src="images/mahber.jpg" alt="Beyanetu" >
+             <div class="description">
+                mahber <br>
+                price $150 <br>
+                <button>Add to Cart</button>
+             </div>
+        </a>
+       </div>
+    </main>
+</body>
+</html>

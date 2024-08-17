@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images_Gaallery</title>
+    <style>
+      .gallery
+      {
+        display: inline-block;
+         border: 1px solid rgb(208, 203, 203);
+         margin:15px;
+         box-shadow:3px 3px 10px rgb(198, 193, 193) ;
+      }
+      .gallery img
+      {
+        width:200px;
+      }
+      .gallery .description
+      {
+        text-align: center;
+      }
+      .gallery a{
+        text-decoration: none;
+        color: black;
+      }
+      button
+      {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: rgb(245, 24, 127);
+        border-radius: 10px;
+        padding: 5px;
+      }
+      .gallery:hover
+      {
+        border:2px solid rgb(115, 83, 83);
+        
+      }
+      button:hover
+      {
+        background-color: rgb(9, 231, 54);
+        cursor: pointer;
+        
+      }
+      @media screen and (max-width:600px) 
+      {
+      div,img
+        {
+             width:50%;
+             align-items: center;
+             padding: 7px;
+             margin:0px;
+        }
+    }
+    .gallery
+    {
+      transition: all 3s;
+    }
+    .gallery:hover{
+      transform: translateY(-10px) scale(1.5);
+    }
+    </style>
+</head>
+<body>
+    <main>
+       <div class="gallery">
+        <a href="images/Beyanetu.jpg" >
+            <img src="images/Beyanetu.jpg" alt="Beyanetu" >
+             <div class="description">
+                Beyanetu <br>
+                price $150 <br> 
+                <button>Add to Cart</button>
+             </div>
+            
+        </a>
+       </div>
+      
+       <div class="gallery">
+        <a href="images/tibs.jpg" >
+            <img src="images/tibs.jpg" alt="Beyanetu" >
+             <div class="description">
+                tibs <br>
+                price $150
+                <br>
+                <button>Add to Cart</button>
+             </div>
+        </a>
+       </div>
+
+       <div class="gallery">
+        <a href="images/mahber.jpg" >
+            <img src="images/mahber.jpg" alt="Beyanetu" >
+             <div class="description">
+                mahber <br>
+                price $150 <br>
+                <button>Add to Cart</button>
+             </div>
+        </a>
+       </div>
+    </main>
+</body>
+</html>
